@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Prueba tecnica 1.iml" filepath="$PROJECT_DIR$/.idea/Prueba tecnica 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cliente-persona-service/cliente-persona-service/cliente-persona-service.iml" filepath="$PROJECT_DIR$/cliente-persona-service/cliente-persona-service/cliente-persona-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cuenta-movimiento-service/cuenta-movimiento-service/cuenta-movimiento-service.iml" filepath="$PROJECT_DIR$/cuenta-movimiento-service/cuenta-movimiento-service/cuenta-movimiento-service.iml" />
+    </modules>
+  </component>
+</project>
