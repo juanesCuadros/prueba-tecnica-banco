@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 public class ClienteController {
 
   private final IClienteService clienteService;
-  private final ClienteMapper clienteMapper; // Inyectamos el mapeador independiente
+  private final ClienteMapper clienteMapper;
 
   @PostMapping
   public ResponseEntity<ClienteDTO> crear(@Valid @RequestBody ClienteDTO dto) {

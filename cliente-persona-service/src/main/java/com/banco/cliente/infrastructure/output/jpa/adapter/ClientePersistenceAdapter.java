@@ -46,13 +46,12 @@ public class ClientePersistenceAdapter implements IClienteRepository {
     jpaRepository.delete(toEntity(cliente));
   }
 
-  // --- Métodos Privados de Mapeo (Evitamos librerías externas por simplicidad y control) ---
 
   private ClienteEntity toEntity(Cliente domain) {
     ClienteEntity entity = new ClienteEntity();
-    // Setear ID solo si existe (para actualizaciones)
+
     if (domain.getId() != null) {
-      entity.setPersonaId(domain.getId()); // ID heredado de PersonaEntity
+      entity.setPersonaId(domain.getId());
     }
     entity.setNombre(domain.getNombre());
     entity.setGenero(domain.getGenero());

@@ -1,6 +1,8 @@
 package com.banco.cliente.application.service.implement;
 
 import com.banco.cliente.application.service.interfac.IClienteService;
+import com.banco.cliente.domain.exception.RecursoNoEncontradoException;
+import com.banco.cliente.domain.exception.ReglaNegocioException;
 import com.banco.cliente.domain.model.Cliente;
 import com.banco.cliente.domain.repository.IClienteRepository;
 import lombok.RequiredArgsConstructor;
@@ -16,23 +18,22 @@ public class ClienteService implements IClienteService {
   private final IClienteRepository clienteRepository;
 
   @Override
-  @Transactional // Garantiza que si algo falla, no se guarde basura en la BD
+  @Transactional
   public Cliente crear(Cliente cliente) {
-    // Regla de negocio: Validar que no exista la identificación o el clienteId
     clienteRepository.findByIdentificacion(cliente.getIdentificacion())
-      .ifPresent(c -> { throw new RuntimeException("Ya existe una persona con esa identificación"); });
+      .ifPresent(c -> { throw new ReglaNegocioException("Ya existe una persona con esa identificación"); });
 
     clienteRepository.findByClienteId(cliente.getClienteId())
-      .ifPresent(c -> { throw new RuntimeException("El clienteId ya está en uso"); });
+      .ifPresent(c -> { throw new ReglaNegocioException("El clienteId ya está en uso"); });
 
     return clienteRepository.save(cliente);
   }
 
   @Override
-  @Transactional(readOnly = true) // Mejora el rendimiento para consultas de solo lectura
+  @Transactional(readOnly = true)
   public Cliente obtenerPorClienteId(String clienteId) {
     return clienteRepository.findByClienteId(clienteId)
-      .orElseThrow(() -> new RuntimeException("Cliente no encontrado con id: " + clienteId));
+      .orElseThrow(() -> new RecursoNoEncontradoException("Cliente no encontrado con clienteId: " + clienteId));
   }
 
   @Override
@@ -46,7 +47,6 @@ public class ClienteService implements IClienteService {
   public Cliente actualizar(String clienteId, Cliente clienteActualizado) {
     Cliente clienteExistente = obtenerPorClienteId(clienteId);
 
-    // Actualizamos los campos permitidos (simulando un PUT)
     clienteExistente.setNombre(clienteActualizado.getNombre());
     clienteExistente.setGenero(clienteActualizado.getGenero());
     clienteExistente.setEdad(clienteActualizado.getEdad());
