@@ -1,5 +1,6 @@
 package com.banco.cliente.infrastructure.input.rest.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
@@ -35,6 +36,7 @@ public class ClienteDTO {
   private String clienteId;
 
   @NotBlank(message = "La contraseña es obligatoria")
+  @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
   private String contrasena;
 
   @NotNull(message = "El estado es obligatorio")

@@ -1,7 +1,7 @@
-package com.banco.cliente.infrastructure.input.rest.exception;
+package com.banco.cuenta.infrastructure.exception;
 
-import com.banco.cliente.domain.exception.RecursoNoEncontradoException;
-import com.banco.cliente.domain.exception.ReglaNegocioException;
+import com.banco.cuenta.domain.exception.RecursoNoEncontradoException;
+import com.banco.cuenta.domain.exception.ReglaNegocioException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;

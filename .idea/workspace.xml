@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="05c8e7c5-a7b3-4831-821b-08dd21c607cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/prueba-tecnica-banco.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cuenta-movimiento-service/src/main/java/com/banco/cuenta/application/service/MovimientoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cuenta-movimiento-service/src/main/java/com/banco/cuenta/domain/model/Cuenta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cuenta-movimiento-service/src/main/java/com/banco/cuenta/domain/model/Movimiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cuenta-movimiento-service/src/main/java/com/banco/cuenta/domain/repository/ICuentaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cuenta-movimiento-service/src/main/java/com/banco/cuenta/domain/repository/IMovimientoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cuenta-movimiento-service/src/main/java/com/banco/cuenta/infrastructure/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cuenta-movimiento-service/src/main/java/com/banco/cuenta/infrastructure/mapper/CuentaMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cuenta-movimiento-service/src/main/java/com/banco/cuenta/infrastructure/output/jpa/entity/CuentaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Prueba tecnica 1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente-persona-service/src/main/java/com/banco/cliente/application/service/implement/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-persona-service/src/main/java/com/banco/cliente/application/service/implement/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente-persona-service/src/main/java/com/banco/cliente/infrastructure/input/rest/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-persona-service/src/main/java/com/banco/cliente/infrastructure/input/rest/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente-persona-service/src/main/java/com/banco/cliente/infrastructure/input/rest/dto/ClienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-persona-service/src/main/java/com/banco/cliente/infrastructure/input/rest/dto/ClienteDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente-persona-service/src/main/java/com/banco/cliente/infrastructure/input/rest/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-persona-service/src/main/java/com/banco/cliente/infrastructure/input/rest/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente-persona-service/src/main/java/com/banco/cliente/infrastructure/output/jpa/adapter/ClientePersistenceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-persona-service/src/main/java/com/banco/cliente/infrastructure/output/jpa/adapter/ClientePersistenceAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente-persona-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-persona-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente-persona-service/src/test/java/com/banco/cliente/ClientePersonaServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/cliente-persona-service/src/test/java/com/banco/cliente/ClientePersonaServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cuenta-movimiento-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cuenta-movimiento-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cuenta-movimiento-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cuenta-movimiento-service/src/test/java/com/banco/cuenta/CuentaMovimientoServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/cuenta-movimiento-service/src/test/java/com/banco/cuenta/CuentaMovimientoServiceApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="3FGPfV0OpMe4Xw9hwPaM5iOHA0X" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05c8e7c5-a7b3-4831-821b-08dd21c607cf" name="Changes" comment="" />
+      <created>1781698538306</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1781698538306</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

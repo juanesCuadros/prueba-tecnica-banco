@@ -1,11 +1,11 @@
 server:
-  port: 8080
+  port: 8081
   servlet:
     context-path: /api
 
 spring:
   application:
-    name: cliente-persona-service
+    name: cuenta-movimiento-service
   profiles:
     active: dev
   jpa:
@@ -25,7 +25,7 @@ spring:
     exclude:
       - org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration
   datasource:
-    url: jdbc:h2:mem:bancodb;DB_CLOSE_DELAY=-1;NON_KEYWORDS=KEY,VALUE
+    url: jdbc:h2:mem:cuentadb;DB_CLOSE_DELAY=-1;NON_KEYWORDS=KEY,VALUE
     username: sa
     password:
     driver-class-name: org.h2.Driver
@@ -42,7 +42,7 @@ spring:
     activate:
       on-profile: prod
   datasource:
-    url: jdbc:postgresql://${DB_HOST:localhost}:5432/${DB_NAME:bancodb}
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/${DB_NAME:cuentadb}
     username: ${DB_USER:postgres}
     password: ${DB_PASSWORD:postgres}
     driver-class-name: org.postgresql.Driver
